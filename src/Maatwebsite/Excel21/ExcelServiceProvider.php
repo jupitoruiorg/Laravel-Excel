@@ -47,12 +47,12 @@ class ExcelServiceProvider extends ServiceProvider {
             $this->app->configure('excel21');
         } else {
             $this->publishes([
-                __DIR__ . '/../../config/excel2121.php' => config_path('excel2121.php'),
+                __DIR__ . '/../../config/excel21.php' => config_path('excel21.php'),
             ]);
         }
 
         $this->mergeConfigFrom(
-            __DIR__ . '/../../config/excel2121.php', 'excel2121'
+            __DIR__ . '/../../config/excel21.php', 'excel21'
         );
 
         //Set the autosizing settings
