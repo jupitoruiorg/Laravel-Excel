@@ -1,7 +1,7 @@
 <?php namespace Maatwebsite\Excel21\Readers;
 
 use Closure;
-use Maatwebsite\Excel21\Excel;
+use Maatwebsite\Excel21\Excel21;
 use Maatwebsite\Excel21\Exceptions\LaravelExcelException;
 
 /**
@@ -19,7 +19,7 @@ class Batch {
 
     /**
      * Excel object
-     * @var Excel
+     * @var Excel21
      */
     protected $excel21;
 
@@ -41,12 +41,14 @@ class Batch {
 
     /**
      * Start the Batach
-     * @param  Excel   $excel21
+     *
+     * @param Excel21  $excel21
      * @param  array   $files
      * @param  Closure $callback
-     * @return Excel
+     *
+     * @return Excel21
      */
-    public function start(Excel $excel21, $files, Closure $callback)
+    public function start(Excel21 $excel21, $files, Closure $callback)
     {
         // Set excel21 object
         $this->excel21 = $excel21;

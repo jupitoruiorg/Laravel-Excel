@@ -59,7 +59,7 @@
                 "Maatwebsite\\Excel21\\ExcelServiceProvider"
             ],
             "aliases": {
-                "Excel21": "Maatwebsite\\Excel21\\Facades\\Excel"
+                "Excel21": "Maatwebsite\\Excel21\\Facades\\Excel21"
             }
         }
     }

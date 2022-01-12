@@ -18,7 +18,7 @@ use Maatwebsite\Excel21\Exceptions\LaravelExcelException;
  * @author     Maatwebsite <info@maatwebsite.nl>
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt    LGPL
  */
-class Excel {
+class Excel21 {
 
     /**
      * Filter
@@ -191,8 +191,10 @@ class Excel {
 
     /**
      * Set filters
+     *
      * @param   array $filters
-     * @return  Excel
+     *
+     * @return  Excel21
      */
     public function registerFilters($filters = [])
     {
@@ -217,9 +219,11 @@ class Excel {
 
     /**
      * Enable certain filters
+     *
      * @param  string|array     $filter
      * @param bool|false|string $class
-     * @return Excel
+     *
+     * @return Excel21
      */
     public function filter($filter, $class = false)
     {

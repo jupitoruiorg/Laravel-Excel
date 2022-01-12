@@ -1,7 +1,7 @@
 <?php namespace Maatwebsite\Excel21\Files;
 
 use Illuminate\Foundation\Application;
-use Maatwebsite\Excel21\Excel;
+use Maatwebsite\Excel21\Excel21;
 use Maatwebsite\Excel21\Exceptions\LaravelExcelException;
 
 abstract class ExcelFile extends File {
@@ -23,9 +23,9 @@ abstract class ExcelFile extends File {
 
     /**
      * @param Application $app
-     * @param Excel       $excel21
+     * @param Excel21     $excel21
      */
-    public function __construct(Application $app, Excel $excel21)
+    public function __construct(Application $app, Excel21 $excel21)
     {
         parent::__construct($app, $excel21);
         $this->file = $this->loadFile();

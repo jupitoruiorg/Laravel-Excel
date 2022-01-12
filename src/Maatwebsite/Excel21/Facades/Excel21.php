@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Facade;
  * @author     Maatwebsite <info@maatwebsite.nl>
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt    LGPL
  */
-class Excel extends Facade {
+class Excel21 extends Facade {
 
     /**
      * Return facade accessor

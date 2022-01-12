@@ -2,7 +2,7 @@
 
 use Closure;
 use PHPExcel;
-use Maatwebsite\Excel21\Excel;
+use Maatwebsite\Excel21\Excel21;
 use Maatwebsite\Excel21\Collections\SheetCollection;
 use Maatwebsite\Excel21\Exceptions\LaravelExcelException;
 

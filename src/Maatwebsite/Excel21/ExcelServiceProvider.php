@@ -62,7 +62,7 @@ class ExcelServiceProvider extends ServiceProvider {
 	    if (method_exists(Collection::class, 'macro')) {
             Collection::macro('export', function($filename, $type = 'xlsx', $method = 'download') {
                 $model = $this;
-                Facades\Excel::create($filename, function($excel21) use ($model, $filename) {
+                Facades\Excel21::create($filename, function($excel21) use ($model, $filename) {
                     $excel21->sheet($filename, function($sheet) use ($model) {
                     $sheet->fromModel($model);
                 });
@@ -194,7 +194,7 @@ class ExcelServiceProvider extends ServiceProvider {
         // Bind the Excel class and inject its dependencies
         $this->app->singleton('excel21', function ($app)
         {
-            $excel21 = new Excel(
+            $excel21 = new Excel21(
                 $app['phpexcel21'],
                 $app['excel21.reader'],
                 $app['excel21.writer'],
@@ -206,7 +206,7 @@ class ExcelServiceProvider extends ServiceProvider {
             return $excel21;
         });
 
-        $this->app->alias('excel21', Excel::class);
+        $this->app->alias('excel21', Excel21::class);
     }
 
     /**
