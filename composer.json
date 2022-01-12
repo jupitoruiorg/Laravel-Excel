@@ -1,6 +1,6 @@
 {
-  "name": "maatwebsite/excel",
-  "description": "Supercharged Excel exports in Laravel",
+  "name": "maatwebsite/excel21",
+  "description": "Supercharged Excel21 exports in Laravel",
   "license": "MIT",
   "keywords": [
     "laravel",
@@ -42,10 +42,10 @@
   },
   "autoload": {
     "classmap": [
-      "src/Maatwebsite/Excel"
+      "src/Maatwebsite/Excel21"
     ],
     "psr-0": {
-      "Maatwebsite\\Excel\\": "src/"
+      "Maatwebsite\\Excel21\\": "src/"
     }
   },
   "autoload-dev": {
@@ -56,10 +56,10 @@
   "extra": {
         "laravel": {
             "providers": [
-                "Maatwebsite\\Excel\\ExcelServiceProvider"
+                "Maatwebsite\\Excel21\\ExcelServiceProvider"
             ],
             "aliases": {
-                "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+                "Excel21": "Maatwebsite\\Excel21\\Facades\\Excel"
             }
         }
     }
