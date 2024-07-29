@@ -17,6 +17,12 @@
       "email": "patrick@maatwebsite.nl"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/jupitoruiorg/super_closure"
+    }
+  ],
   "require": {
     "php": "^8.3",
     "phpoffice/phpexcel": "^1.8.1",
@@ -24,7 +30,7 @@
     "illuminate/config": "^11.0",
     "illuminate/filesystem": "^11.0",
     "illuminate/support": "^11.0",
-    "jeremeamia/superclosure": "^2.4",
+    "jeremeamia/superclosure": "^2.5",
     "nesbot/carbon": "^2",
     "tijsverkoyen/css-to-inline-styles": "~2.0"
   },
